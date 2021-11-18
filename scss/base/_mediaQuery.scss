@@ -38,14 +38,18 @@
     justify-content: space-around;
   }
   footer nav .itemsFooter .containerFooter ul {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .iconoFooter {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   footer nav .itemsFooter .containerFooter .containerFooterRedes li {
     margin: 0 auto;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterContacto .subItems {
+    color: lightgrey;
+    font-size: 1.4rem;
   }
 
 }
@@ -71,14 +75,18 @@
     color: lightgrey;
     font-size: 1.4rem;
   }
-  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos li a {
-    color: lightgrey;
-  }
   footer nav .itemsFooter .containerFooter .containerFooterNavegacion {
     margin-right: 3rem;
   }
   footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos {
     justify-content: space-between;
+  }
+  footer nav .itemsFooter .containerFooter ul {
+    font-size: 1.5rem;
+  }
+
+  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .iconoFooter {
+    font-size: 3.5rem;
   }
 }
 
@@ -150,13 +158,18 @@
   }
   footer nav .itemsFooter .containerFooter .containerFooterContacto .subItems {
     color: lightgrey;
-    font-size: 1.4rem;
-  }
-  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos li a {
-    color: lightgrey;
+    font-size: 1.5rem;
   }
   footer nav .itemsFooter .containerFooter .containerFooterNavegacion {
-    margin-right: 3rem;
+    margin-right: 3.5rem;
+  }
+
+  footer nav .itemsFooter .containerFooter ul {
+    font-size: 1.5rem;
+  }
+
+  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .iconoFooter {
+    font-size: 3.5rem;
   }
 }
 
