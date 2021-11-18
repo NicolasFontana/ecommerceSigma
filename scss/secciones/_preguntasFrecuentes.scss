@@ -1,0 +1,51 @@
+  /* COMIENZA PREGUNTA FRECUENTES */
+  .gridContainer {
+    font-family: nth($fonts , 2 );
+    display: grid;
+    background: nth($bg-colores , 4 );
+    grid-template-rows: 10rem auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "titulo"
+    "pregRta1"
+    "pregRta2"
+    "pregRta3"
+    "pregRta4"
+    "pregRta5";
+    gap: 2rem;
+    padding: 0 3rem 10rem 3rem;
+
+    .gridItem {
+      
+      &:nth-child(1) {
+        grid-area: titulo;
+        align-self: center;
+        justify-self: center;
+      }
+      &:nth-child(2) {
+        grid-area: pregRta1;
+      }
+      &:nth-child(3) {
+        grid-area: pregRta2;
+      }
+      &:nth-child(4) {
+        grid-area: pregRta3;
+      }
+      &:nth-child(5) {
+        grid-area: pregRta4;
+      }
+      &:nth-child(6) {
+        grid-area: pregRta5;
+      }
+      h2 {
+        @extend %fontTittle;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  /* TERMINA PREGUNTA FRECUENTES */

@@ -1,0 +1,22 @@
+  /* COMIENZA NOSOTROS */
+  
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    font-family: nth($fonts , 2 );
+    padding-bottom: 20rem;
+    background: nth($bg-colores , 4 );
+
+    h2 {
+      @extend %fontTittle;
+      align-self: center;
+      margin: 3rem 0 2rem 0;
+    }
+    p {
+      font-size:  1.8rem;
+      margin: 0rem 3rem 4rem 3rem;
+    }
+  }
+
+  
+  /* TERMINA NOSOTROS */

@@ -1,0 +1,47 @@
+/* Comienza Header */
+header {
+    .containerHeader {
+        top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: nth($bg-colores , 2 );
+        padding: 1rem 3rem;
+
+        .logoHeader {
+        display: flex;
+        align-items: center;
+
+            a {
+                padding-right: 5rem;
+            }
+
+            h1 {
+                font-family: nth($fonts , 1 );
+                color: nth($txt-colores , 6 );
+                font-weight: 200;
+                font-size: 2.5rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-align: left; 
+            }
+        }
+        .headerRedes {
+            display: flex;
+            font-size: 3.5rem;
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                padding-left: 4rem;
+                color: nth($txt-colores , 6 );
+                transition: color 0.2s;
+
+                &:hover {
+                    color: nth($txt-colores , 8 );
+                }
+            }
+        }
+    }
+}
+/* Termina Header */

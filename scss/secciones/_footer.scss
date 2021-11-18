@@ -1,0 +1,73 @@
+/* Comienza footer */
+footer {
+    background-image: url(../src/multimedia/fotos/impresora-3d.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-attachment: fixed;
+    background-position-y: -2rem;
+    padding: 15rem 2rem 15rem 2rem;
+    text-transform: uppercase;
+
+    nav {
+    
+        .itemsFooter {
+        
+            .containerFooter {
+                @include flexBox (flex, row, space-around, auto);
+                    a {
+                        color: nth($txt-colores, 7);
+                        text-decoration: none;
+
+                    &:hover {
+                    color: nth($txt-colores, 8);
+                    }
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        font-family: nth($fonts , 3 );
+                        font-size: 1.8rem;
+                        line-height: 4rem;
+                        padding-left: 0;
+                    }
+
+                    .containerFooterNavegacion {
+                        @include flexBox (flex, column, auto, auto);
+                        width: 23rem;
+                    }
+
+                    .containerFooterContacto {
+                        @include flexBox (flex, column, auto, auto);
+                        text-align: center;
+                        align-content: flex-start;
+
+                        .subItems {
+                            @include flexBox (flex, column, auto, auto);
+                            text-align: start;
+                            list-style-type: none;
+                            color: nth($txt-colores , 7 );
+                        }
+                    }
+
+                    .containerFooterRedes {
+                        @include flexBox (flex, column, auto, auto);
+                        color: nth($txt-colores , 7 );
+
+                        .subItemsDos {
+                            @include flexBox (flex, row, space-around, auto);
+                            width: 246.762px;
+                            padding-top: 2rem;
+                            list-style-type: none;
+                        
+                            .iconoFooter {
+                                font-size: 4.5rem;
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+/* Termina footer */

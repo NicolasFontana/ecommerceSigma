@@ -1,0 +1,8 @@
+// Mixins
+
+@mixin flexBox ($display, $direction, $justify, $align) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

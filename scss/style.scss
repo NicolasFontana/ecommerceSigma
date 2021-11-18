@@ -1,0 +1,23 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nesting o anidamiento */
+@import './base/variables';
+@import './base/extends';
+@import './base/mixins';
+@import './secciones/inicio';
+@import './secciones/header';
+@import './secciones/nav';
+@import './secciones/footer';
+@import './secciones/productos';
+@import './secciones/preguntasFrecuentes';
+@import './secciones/nosotros';
+@import './secciones/contacto';
+@import './base/mediaQuery';

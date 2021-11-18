@@ -1,0 +1,21 @@
+// Extends
+// Placeholder % 
+
+%fontTittle {
+  font-family: nth($fonts , 1 );
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+%sombra {
+  box-shadow: 0px 0px 14px 2px rgba(200,200,200,0.69);
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(200,200,200,0.69);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(200,200,200,0.69);
+}
+
+%sombraHover {
+  box-shadow: 0px 0px 14px 2px rgba(150,150,150,0.69);
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(150,150,150,0.69);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(150,150,150,0.69);
+}
+

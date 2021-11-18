@@ -1,0 +1,90 @@
+  /* COMIENZA CONTACTO */
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    background: nth($bg-colores, 4);
+
+    .tituloContacto {
+      @extend %fontTittle;
+      margin: 3rem auto 2rem auto;
+    }
+
+    .containerFormText {
+      display: flex;
+      justify-content: space-around;
+
+      .contactanos {
+        font-family: nth($fonts , 1 );
+        margin-left: 4rem;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        font-weight: 300;
+        justify-self: center;
+        align-self: flex-start;
+      }
+
+      .boxFormulario {
+        .form {
+          background-color: nth($bg-colores, 2);
+          width: 90%;
+          max-width: 40rem;
+          border-radius: 1.5rem;
+          padding: 2rem;
+          font-family: nth($fonts , 2 );
+          margin: 4rem;
+          color: nth($txt-colores, 6);
+          @extend %sombra;
+
+          .containerFormulario {
+            display: flex;
+            flex-direction: column;
+
+            .formNombreNumero {
+              display: flex;
+              justify-content: space-between;
+            }
+
+            .form__tittle {
+              font-family: nth($fonts , 1 );
+              margin: 1rem;
+              font-size: 2rem;
+            }
+
+            .form__input {
+              padding: .3rem;
+              margin: 1rem;
+              outline: none;
+              border: none;
+              border: solid 0.1rem grey;
+              background: nth($bg-colores , 4 )
+            }
+
+            .form__input--message {
+              resize: none;
+              font-family: nth($fonts , 2 );
+            }
+
+            .form__send {
+              margin: 1rem;
+              background-color: nth($bg-colores , 6 );
+              color: nth($txt-colores, 3);
+              border: none;
+              font-family: nth($fonts , 2 );
+              font-size: 2rem;
+              cursor: pointer;
+              border-radius: 0.5rem;
+            }
+
+            .form__Ofertas {
+              font-size: 1.2rem;
+
+              .form__checkbox {
+                margin: 1rem 0.5rem 1rem 1rem
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* TERMINA CONTACTO */

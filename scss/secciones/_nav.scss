@@ -1,0 +1,59 @@
+/* Comienza barra de navegación */
+.bg-nav {
+  background-color: nth($bg-colores , 7 );
+  padding: 0;
+}
+
+.navItems {
+  color: nth($txt-colores , 4 );
+  font-family: nth($fonts , 3 );
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-right: 3rem;
+}
+
+.navItems:hover {
+  color: nth($txt-colores , 9 );
+}
+
+.navItems:visited {
+  color: nth($txt-colores , 9 );
+}
+
+.iconBars {
+  margin: auto;
+  color: nth($txt-colores , 4 );
+  padding: 2px 0 0 0;
+  font-size: 1.5rem;
+}
+
+.containerNav {
+  padding: 0 2.5rem;
+}
+
+.bgSubItems {
+  padding: 0;
+  border: none;
+  margin-top: 0;
+}
+
+.navSubItems {
+  font-size: 1.3rem;
+  color: nth($txt-colores , 4 );
+  background: nth($bg-colores , 7 );
+  padding: 0.5rem 1rem;
+}
+
+.navSubItems:hover {
+  background: #80192C;
+  color: nth($txt-colores , 6 );
+}
+
+.carrito {
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: nth($txt-colores , 1 );
+}
+/* Termina barra de navegación */

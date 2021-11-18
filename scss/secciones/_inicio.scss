@@ -1,0 +1,248 @@
+  /* Comienza imagen de presentación */
+  
+  .seccionPresentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .degrade {
+      height: 11rem;
+      &::before {
+        content: "";
+        width: 100%;
+        min-height: 11vh;
+        position: absolute;
+        right: 0;
+        background-image: linear-gradient(#F7D9C7, #FFF);
+        opacity: 1;
+      }
+    }
+    .containerPresentacion {
+      display: flex;
+      flex-flow: row-reverse;
+      justify-content: left;
+      text-align: center;
+      margin-right: 3rem;
+
+      .textoPresentacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 4vw;
+        font-family: nth($fonts , 1 );
+        text-transform: uppercase;
+        font-weight: 300;
+        color: nth($txt-colores , 3 );
+
+        span {
+          font-weight: bold;
+          color: nth($txt-colores , 6 );
+        }
+      }
+      .imgPresentacion {
+        width: 70vw;
+      }
+    }
+    .lineaDivisoria {
+      height: 0.1rem;
+      width: 20%;
+      background: nth($bg-colores , 3 );
+      margin: 5rem auto;
+    }
+  }
+  
+  /* Termina imagen de presentación */
+  
+  /* Comienza carousel */
+  
+  .seccionOfertas {
+
+    .ofertasTxt {
+      font-family: nth($fonts , 1 );
+      text-transform: uppercase;
+      font-size: 3rem;
+    }
+
+    .descuento {
+      color: nth($txt-colores , 5 );
+      font-weight: 100;
+      font-size: 1.5rem;
+    }
+
+    .lineaDivisoria {
+      height: 0.1rem;
+      width: 20%;
+      background: nth($bg-colores , 3 );
+      margin: 5rem auto;
+    }
+  }
+  
+  /* Termina carousel */
+  
+  /* Comienza sección Instagram */
+  
+  .containerInstagram {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+
+    .textoIndexIg {
+      font-size: 3rem;
+      font-family: nth($fonts , 1 );
+      font-weight: 300;
+      padding-bottom: 5rem;
+      text-transform: uppercase;
+    }
+    nav {
+      .publicacionesIg{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+        list-style-type: none;
+        margin-bottom: 3rem;
+
+        #pubIg1 {
+          @extend %sombra;
+
+          &:hover {
+            @extend %sombraHover;
+          }
+        }
+
+        #pubIg2 {
+          @extend %sombra;
+
+          &:hover {
+            @extend %sombraHover;
+          }
+        }
+
+        #pubIg3 {
+          @extend %sombra;
+
+          &:hover {
+            @extend %sombraHover;
+          }
+        }
+      }
+    }
+
+    .lineaDivisoria {
+      height: 0.1rem;
+      width: 20%;
+      background: nth($bg-colores , 3 );
+      margin: 5rem auto;
+    }
+  }
+  
+  /* Termina sección Instagram */
+  
+  /* Comienza newsletter */
+  
+  .newsletter {
+
+    .degradeNewslatter {
+      &::before{
+        content: "";
+        width: 100%;
+        min-height: 15rem;
+        position: absolute;
+        background-image: linear-gradient(#fff, #F7D9C7);
+        opacity: 0.8;
+      }
+    }
+    .newsletterBox {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      height: 15rem;
+      position: relative;
+
+      form {
+        .textoNewsletterUno {
+          font-family: nth($fonts , 1 );
+          font-weight: 200;
+          font-size: 3rem;
+          display: flex;
+          justify-content: center;
+        }
+
+        .textoNewsletterDos {
+          font-family: nth($fonts , 1 );
+          font-weight: 200;
+          font-size: 2rem;
+          line-height: 5rem;
+          display: flex;
+          justify-content: center;
+        }
+
+        .emailBox {
+          height: 5rem;
+          display: flex;
+          justify-content: center;
+          padding: 1rem;
+
+          i {
+            background: nth($bg-colores , 2 );
+            padding: 0 1.5rem;
+            line-height: 3rem;
+            color: nth($txt-colores , 7 );
+            font-size: 2rem;
+            border-radius: 1rem 0 0 1rem;
+          }
+
+          .formSuscribite , .formEmail {
+            border: none;
+            outline: none;
+          }
+
+          .formSuscribite {
+            color: nth($txt-colores , 7 );
+            background: nth($bg-colores , 2 );
+            cursor: pointer;
+            text-transform: uppercase;
+            width: 11rem;
+            border-radius: 0 1rem 1rem 0;
+            font-family: nth($fonts , 2 );
+
+            &:hover {
+              color: nth($txt-colores , 6 );
+            }
+          }
+
+          .formEmail {
+            width: 22rem;
+            padding: 0 1rem;
+            background: nth($bg-colores , 5 );
+            color: nth($txt-colores , 3 );
+            border: solid 0.1rem nth($bg-colores , 2 );
+            font-family: nth($fonts , 2 );
+          }
+        }
+      }
+    }
+  }
+
+  /* Termina newsletter */
+
+  /* Comienza logo whatsapp */
+  
+  .logoWspFixed{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 6rem;
+    z-index: 100;
+
+    a {
+      color: nth($txt-colores , 5  );
+    }
+  }
+  
+  /* Termina logo whatsapp */
+  
+  /* TERMINA PÁGINA DE INICIO */

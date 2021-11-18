@@ -1,0 +1,133 @@
+@media screen and (min-width:992px) and (max-width: 2560px) {
+  .containerHeader {
+    padding: 1rem 3rem;
+  }
+
+  .textoPresentacion {
+    font-size: 4rem;
+  }
+
+  .navItems:hover + .bgSubItems {
+    display: block;
+    position: absolute;
+    z-index: 10000;
+  }
+  
+  .bgSubItems:hover {
+    display: block;
+    position: absolute;
+    z-index: 10000;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  // Ig publicaciones
+  .publicacionesIg {
+    width: 90%;
+    justify-content: space-around;
+  }
+
+  #pubIg2 {
+    display: none;
+  }
+
+  // Footer
+  footer nav .itemsFooter .containerFooter {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  footer nav .itemsFooter .containerFooter ul {
+    font-size: 1.3rem;
+  }
+
+  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .iconoFooter {
+    font-size: 3rem;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterRedes li {
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .logoHeader h1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  // Header
+  header .containerHeader .logoHeader a {
+    padding-right: 0;
+  }
+  header .containerHeader .headerRedes{
+    padding-left: 0;
+  }
+  .logoHeader h1 {
+    display: none;
+  }
+  .logoSigma {
+    width: 70px;
+  }
+  .containerHeader {
+      padding: 1rem 2rem;
+  }
+
+  // Imagen presentacion
+  .seccionPresentacion .containerPresentacion {
+    flex-wrap: wrap;
+  }
+  .seccionPresentacion .containerPresentacion .imgPresentacion {
+    width: 100vw;
+  }
+  .seccionPresentacion .containerPresentacion {
+    margin-right: 0;
+    position: relative;
+    top: -5rem
+
+  }
+  .seccionPresentacion .containerPresentacion .textoPresentacion {
+    margin: auto;
+    width: 100vw;
+    position: relative;
+    top: -3rem;
+    font-size: 2.4rem;
+  }
+  // Carrusel imagenes
+  .seccionOfertas .ofertasTxt {
+    font-size: 2.4rem;
+  }
+
+  // Inicio Instagram
+  .containerInstagram .textoIndexIg {
+    font-size: 2.4rem;
+  }
+  #pubIg1 {
+    display: none;
+  }
+  #pubIg3 {
+    display: none;
+  }
+
+  //Footer
+  footer nav .itemsFooter .containerFooter {
+    justify-content: flex-start;
+    flex-flow: wrap;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos {
+    justify-content: space-between;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterContacto {
+    text-align: start;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterContacto .subItems {
+    color: lightgrey;
+    font-size: 1.4rem;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos li a {
+    color: lightgrey;
+
+  }
+}
+

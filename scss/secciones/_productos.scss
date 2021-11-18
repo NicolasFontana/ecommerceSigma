@@ -1,0 +1,50 @@
+  /* COMIENZA PRODUCTOS*/
+
+  #mainProductos {
+    background: nth($bg-colores , 4 );
+  }
+
+  .productosTexto {
+    @extend %fontTittle;
+  }
+  
+  
+  .colNav {
+    background:nth($bg-colores , 2 );
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: nth($fonts , 2 );
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    margin: 1rem auto;
+
+    a {
+      text-decoration: none;
+      color: nth($txt-colores , 6 );
+
+      &:hover {
+        color: nth($txt-colores , 6 );
+      }
+    }
+    li:hover {
+      background-color: nth($bg-colores , 8 );
+    }
+  }
+  
+  .itemProducto {
+    font-family: nth($fonts , 2 );
+    font-size: 2rem;
+    background: nth($bg-colores , 5 );
+    @extend %sombra;
+    border: solid 0.1rem lightgrey;
+    overflow: hidden;
+
+    &:hover {
+      @extend %sombraHover;
+    }
+  }
+  /* TERMINA PRODUCTOS*/
