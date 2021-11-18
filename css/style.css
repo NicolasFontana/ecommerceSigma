@@ -622,6 +622,15 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
   #pubIg3 {
     display: none;
   }
+
+  footer nav .itemsFooter .containerFooter {
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
+
+  footer nav .itemsFooter .containerFooter .containerFooterContacto {
+    text-align: start;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 576px) {
   header .containerHeader .logoHeader a {
