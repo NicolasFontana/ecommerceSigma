@@ -67,6 +67,19 @@
   footer nav .itemsFooter .containerFooter .containerFooterContacto {
     text-align: start;
   }
+  footer nav .itemsFooter .containerFooter .containerFooterContacto .subItems {
+    color: lightgrey;
+    font-size: 1.4rem;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos li a {
+    color: lightgrey;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterNavegacion {
+    margin-right: 3rem;
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -133,6 +146,7 @@
   }
   footer nav .itemsFooter .containerFooter .containerFooterContacto {
     text-align: start;
+    margin-right: 3rem;
   }
   footer nav .itemsFooter .containerFooter .containerFooterContacto .subItems {
     color: lightgrey;
@@ -140,7 +154,9 @@
   }
   footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos li a {
     color: lightgrey;
-
+  }
+  footer nav .itemsFooter .containerFooter .containerFooterNavegacion {
+    margin-right: 3rem;
   }
 }
 
