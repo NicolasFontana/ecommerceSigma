@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.navItems {
+#navItems {
   color: nth($txt-colores , 4 );
   font-family: nth($fonts , 3 );
   font-size: 1.4rem;
@@ -14,30 +14,36 @@
   padding-right: 3rem;
 }
 
-.navItems:hover {
+#subMenu {
+  padding: 0;
+  margin-top: 4px;
+  border: 0;
+}
+
+#navItems:hover {
   color: nth($txt-colores , 9 );
 }
 
-.navItems:visited {
+#navItems:visited {
   color: nth($txt-colores , 9 );
 }
 
-.iconBars {
-  margin: auto;
-  color: nth($txt-colores , 4 );
-  padding: 2px 0 0 0;
-  font-size: 1.5rem;
-}
+// .iconBars {
+//   margin: auto;
+//   color: nth($txt-colores , 4 );
+//   padding: 2px 0 0 0;
+//   font-size: 1.5rem;
+// }
 
 .containerNav {
   padding: 0 2.5rem;
 }
 
-.bgSubItems {
-  padding: 0;
-  border: none;
-  margin-top: 0;
-}
+// .bgSubItems {
+//   padding: 0;
+//   border: none;
+//   margin-top: 0;
+// }
 
 .navSubItems {
   font-size: 1.3rem;
@@ -56,4 +62,10 @@
   font-size: 2rem;
   color: nth($txt-colores , 1 );
 }
+
+#buscadorNav {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 /* Termina barra de navegación */

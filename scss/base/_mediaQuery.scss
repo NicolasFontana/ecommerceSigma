@@ -88,6 +88,12 @@
   footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .iconoFooter {
     font-size: 3.5rem;
   }
+  footer nav .itemsFooter .containerFooter .containerFooterRedes {
+    @include flexBox (flex, column, start, start);
+  }
+  .contacto .containerFormText {
+    flex-wrap: wrap;
+  } 
 }
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -170,6 +176,9 @@
 
   footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .iconoFooter {
     font-size: 3.5rem;
+  }
+  .contacto .containerFormText {
+    flex-wrap: wrap;
   }
 }
 
