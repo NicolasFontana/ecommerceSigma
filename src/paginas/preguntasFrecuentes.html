@@ -56,46 +56,47 @@
 
 	<main id="mainPreguntasFrecuentes">
 		<!-- Comienza sección de navegación -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-nav sticky-top p-2">
+		<nav class="navbar navbar-expand-lg bg-nav">
 			<div class="container-fluid containerNav">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="fas fa-bars iconBars"></i></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active pe-5" id="navItems" aria-current="page" href="../../index.html">INICIO</a>
+							<a class="nav-link navItems pe-5" aria-current="page" href="../../index.html">INICIO</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle pe-5" id="navItems" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle active navItems navItems--active pe-5" href="productos.html" id="navbarDropdown" role="button" aria-expanded="false">
 								PRODUCTOS
 							</a>
-							<ul class="dropdown-menu" id="subMenu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Soportes de notebook</a></li>
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Soportes de auriculares</a></li>
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Soportes de celular</a></li>
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Macetas</a></li>
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Toppers</a></li>
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Juguetes</a></li>
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Lectura</a></li>
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Llaveros</a></li>
-								<li><a class="dropdown-item navSubItems" href="./productos.html">Cuadros</a></li>
+							<ul class="dropdown-menu bgSubItems mt-0 animate__animated animate__fadeIn" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de notebook</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de auriculares</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de celular</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Macetas</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Toppers</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Juguetes</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Lectura</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Llaveros</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Cuadros</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="navItems" href="./nosotros.html">NOSOTROS</a>
+							<a class="nav-link navItems pe-5" href="nosotros.html">NOSOTROS</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="navItems" href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
+							<a class="nav-link navItems pe-5" href="preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="navItems" href="./contacto.html">CONTACTO</a>
+							<a class="nav-link navItems" href="contacto.html">CONTACTO</a>
 						</li>
 					</ul>
-					<a href="./carrito.html"><i class="fas fa-cart-arrow-down carrito"></i></a>
+					<button id="modalAbrir" class="botonCarrito"><i class="fas fa-cart-arrow-down carrito"></i></button>
 					<form class="d-flex">
-						<input class="form-control me-2 mt-3 mt-lg-0" id="buscadorNav" type="search" placeholder="Buscar" aria-label="Search">
-						<button class="btn btn-outline-dark mt-3 mt-lg-0" type="submit">Buscar</button>
+						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit" hidden>Buscar</button>
 					</form>
 				</div>
 			</div>
