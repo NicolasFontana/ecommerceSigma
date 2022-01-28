@@ -1,0 +1,83 @@
+  /* Modal */
+
+  .modalContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    #modal {
+      width: 900px;
+      // height: 400px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+
+      h2 {
+        margin-bottom: 3rem;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .modalActive {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #carritoContenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .productoEnCarrito {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+
+      .nombreProductoCarrito {
+        font-size: 2rem;
+        margin: 0;
+      } 
+
+      .precioTachito {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .precioProductoCarrito {
+          font-size: 2rem;
+          margin: 0;
+          margin-right: 1rem;
+        }
+
+        .botonEliminar {
+          font-size: 2rem;
+          border: transparent;
+          background-color: transparent;
+  
+          :hover {
+            color: #dc3545;
+          }
+        }
+      }
+    }
+  }
+
+  #modalCerrar {
+    width: 6rem;
+    margin-top: 2rem;
+  }
