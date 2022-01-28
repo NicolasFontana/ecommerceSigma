@@ -51,9 +51,14 @@
   color: nth($txt-colores , 6 );
 }
 
-.carrito {
+.botonCarrito {
   margin-right: 2rem;
-  font-size: 2rem;
+  background-color: transparent;
+  border: transparent;
+}
+
+.carrito {
+  font-size: 2.4rem;
   color: nth($txt-colores , 1 );
 }
-/* Termina barra de navegación */
+
