@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Meta description 70 a 320 caracteres -->
+  <!-- Titulo de la pestaña 35 a 65 caracteres -->
+  <title>Sigma Impresiones 3D | Materializamos tus ideas</title>
   <meta name="description"
     content="Tienda de productos impresos 3D destinados a mejorar los espacios del hogar, soportes para celular, notebook, auricular, macetas, llaveros y mucho más!">
   <!-- Meta keywords 18 palabras -->
@@ -35,8 +37,7 @@
   <meta property="og:image" content="https://i.imgur.com/Ef4yOip.jpg">
   <meta property="og:image:width" content="240">
   <meta property="og:image:height" content="240">
-  <!-- Titulo de la pestaña 35 a 65 caracteres -->
-  <title>Sigma Impresiones 3D | Materializamos tus ideas</title>
+  
 </head>
 
 <body id="bodyIndex">
@@ -55,24 +56,24 @@
     </nav>
   </header>
   <!-- Termina sección de header -->
+
+  <!-- Comienza sección de navegación -->
   <main>
-    <!-- Comienza sección de navegación -->
-    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav sticky-top p-2">
       <div class="container-fluid containerNav">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars iconBars"></i></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link navItems pe-5" aria-current="page" href="index.html">INICIO</a>
+              <a class="nav-link active pe-5" id="navItems" aria-current="page" href="./index.html">INICIO</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active navItems navItems--active pe-5" href="./src/paginas/productos.html" id="navbarDropdown" role="button" aria-expanded="false">
+              <a class="nav-link dropdown-toggle pe-5" id="navItems" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 PRODUCTOS
               </a>
-              <ul class="dropdown-menu bgSubItems mt-0 animate__animated animate__fadeIn" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" id="subMenu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Soportes de notebook</a></li>
                 <li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Soportes de auriculares</a></li>
                 <li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Soportes de celular</a></li>
@@ -85,19 +86,19 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link navItems pe-5" href="./src/paginas/nosotros.html">NOSOTROS</a>
+              <a class="nav-link" id="navItems" href="./src/paginas/nosotros.html">NOSOTROS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navItems pe-5" href="./src/paginas/preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
+              <a class="nav-link" id="navItems" href="./src/paginas/preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navItems" href="./src/paginas/contacto.html">CONTACTO</a>
+              <a class="nav-link" id="navItems" href="./src/paginas/contacto.html">CONTACTO</a>
             </li>
           </ul>
           <a href="./src/paginas/carrito.html"><i class="fas fa-cart-arrow-down carrito"></i></a>
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit" hidden>Buscar</button>
+            <input class="form-control me-2 mt-3 mt-lg-0" id="buscadorNav" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-dark mt-3 mt-lg-0" type="submit">Buscar</button>
           </form>
         </div>
       </div>
@@ -127,36 +128,36 @@
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./src/multimedia/fotos/soporte-alto-notebook.jpg" class="d-block w-50 mx-auto my-auto" alt="Soporte alto de notebook">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Soporte alto</h2>
-              <h3>$650 <span class="descuento">- 20% OFF</span></h3>
-            </div>
-          </div>
+            <div class="carousel-item active" data-bs-interval="10000">
+              <a href="./src/paginas/productos.html"><img src="./src/multimedia/fotos/soporte-alto-notebook.jpg" class="d-block w-50 mx-auto my-auto" alt="Soporte alto de notebook"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Soporte alto</h2>
+                <h3>$650 <span class="descuento">- 20% OFF</span></h3>
+              </div>
+        </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="./src/multimedia/fotos/soporte-auriculares-mesada.jpg" class="d-block w-50 mx-auto my-auto" alt="Soporte de auriculares con agarre a mesada">
+            <a href="./src/paginas/productos.html"><img src="./src/multimedia/fotos/soporte-auriculares-mesada.jpg" class="d-block w-50 mx-auto my-auto" alt="Soporte de auriculares con agarre a mesada"></a>
             <div class="carousel-caption d-none d-md-block">
               <h2>Soporte de auriculares</h2>
               <h3>$700 <span class="descuento">- 10% OFF</span></h3>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./src/multimedia/fotos/juguete-tiburon-articulado.JPG" class="d-block w-50 mx-auto my-auto" alt="juguete de tiburon articulado">
+            <a href="./src/paginas/productos.html"><img src="./src/multimedia/fotos/juguete-tiburon-articulado.JPG" class="d-block w-50 mx-auto my-auto" alt="juguete de tiburon articulado"></a>
             <div class="carousel-caption d-none d-md-block">
               <h2>Soporte de celular</h2>
               <h3>$600 <span class="descuento">- 15% OFF</span></h3>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       </div>
       <div class="lineaDivisoria"></div>
     </section>
