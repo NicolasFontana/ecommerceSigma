@@ -28,6 +28,15 @@
         margin-bottom: 3rem;
         font-size: 3rem;
       }
+
+      .botonesCarrito {
+        display: flex;
+        flex-direction: row;
+
+        #vaciarCarrito {
+          margin-top: 10rem;
+        }
+      }
     }
   }
 
@@ -75,9 +84,4 @@
         }
       }
     }
-  }
-
-  #modalCerrar {
-    width: 6rem;
-    margin-top: 2rem;
   }

@@ -460,6 +460,13 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
   margin-bottom: 3rem;
   font-size: 3rem;
 }
+.modalContainer #modal .botonesCarrito {
+  display: flex;
+  flex-direction: row;
+}
+.modalContainer #modal .botonesCarrito #vaciarCarrito {
+  margin-top: 10rem;
+}
 
 .modalActive {
   visibility: visible;
@@ -499,11 +506,6 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
 }
 #carritoContenedor .productoEnCarrito .precioTachito .botonEliminar :hover {
   color: #dc3545;
-}
-
-#modalCerrar {
-  width: 6rem;
-  margin-top: 2rem;
 }
 
 /* COMIENZA PREGUNTA FRECUENTES */

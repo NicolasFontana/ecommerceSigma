@@ -95,6 +95,13 @@ const actualizarCarrito = () => {
     carritoContenedor.append(div)
 })}
 
+const vaciarCarrito = document.getElementById('vaciarCarrito');
+
+vaciarCarrito.addEventListener('click', () => {
+  carrito.length = 0;
+  actualizarCarrito();
+})
+
 
 
 
