@@ -25,7 +25,7 @@
       padding: 2rem;
 
       h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         font-size: 3rem;
       }
 
@@ -36,6 +36,21 @@
         #vaciarCarrito {
           margin-top: 10rem;
         }
+      }
+      
+      .lineaDivisoria {
+        width: 860px;
+        height: 1px;
+        background: #D3D3D39F;
+      }
+
+      .precioProducto {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
       }
     }
   }
@@ -77,9 +92,10 @@
           font-size: 2rem;
           border: transparent;
           background-color: transparent;
+          color: #dc3545;
   
           :hover {
-            color: #dc3545;
+            color: #b02a37;
           }
         }
       }

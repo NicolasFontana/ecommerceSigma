@@ -314,10 +314,13 @@ header .containerHeader .headerRedes a:hover {
   background-color: transparent;
   border: transparent;
 }
-
-.carrito {
+.botonCarrito .carrito {
   font-size: 2.4rem;
   color: #000000;
+}
+.botonCarrito .carrito #contadorCarrito {
+  font-family: "Nunito";
+  margin-left: 1rem;
 }
 
 /* Comienza footer */
@@ -457,7 +460,7 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
   padding: 2rem;
 }
 .modalContainer #modal h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
 }
 .modalContainer #modal .botonesCarrito {
@@ -466,6 +469,19 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
 }
 .modalContainer #modal .botonesCarrito #vaciarCarrito {
   margin-top: 10rem;
+}
+.modalContainer #modal .lineaDivisoria {
+  width: 860px;
+  height: 1px;
+  background: #D3D3D39F;
+}
+.modalContainer #modal .precioProducto {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .modalActive {
@@ -503,9 +519,10 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
   font-size: 2rem;
   border: transparent;
   background-color: transparent;
+  color: #dc3545;
 }
 #carritoContenedor .productoEnCarrito .precioTachito .botonEliminar :hover {
-  color: #dc3545;
+  color: #b02a37;
 }
 
 /* COMIENZA PREGUNTA FRECUENTES */

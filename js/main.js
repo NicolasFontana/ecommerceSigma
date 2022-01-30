@@ -20,7 +20,7 @@ let paginaModelos = document.getElementById('modelos');
 let productosCargados = cargarModelos(productos);
 // Cargar productos a la pag
 
-const carrito = [];
+let carrito = [];
 
 productosCargados.forEach( (producto) =>  {
 let productoX = document.createElement('div');
@@ -48,7 +48,7 @@ const agregarAlCarrito = (prodId) => {
   const itemProductos = productosCargados.find ( (prod) => prod.id === prodId)
   carrito.push(itemProductos);
   actualizarCarrito ();
-  console.log(carrito);
+  // console.log(carrito);
 }
 
 const eliminarDelCarrito = (prodId) => {
@@ -57,7 +57,7 @@ const eliminarDelCarrito = (prodId) => {
 
   carrito.splice(indice, 1)
   actualizarCarrito();
-  console.log(carrito)
+  // console.log(carrito);
 }
 
 // Modal carrito
@@ -75,9 +75,15 @@ modalCerrar.addEventListener('click', () => {
   modalContainer.classList.toggle('modalActive');
 })
 
+// modalContainer.addEventListener('click', () => {
+//   modalContainer.classList.toggle('modalActive')
+// })
+
 // Agregar productos del carrito al modal
 
-const modal = document.getElementById('modal')
+const modal = document.getElementById('modal');
+let acumulador = 0;
+let precioTotal = document.getElementById('precioTotal');
 
 const actualizarCarrito = () => {
   carritoContenedor.innerHTML = ""
@@ -92,8 +98,20 @@ const actualizarCarrito = () => {
                     <button onclick="eliminarDelCarrito(${prod.id})" class = "botonEliminar"><i class="far fa-trash-alt"></i></button>
                   </div>
     `
-    carritoContenedor.append(div)
-})}
+    carritoContenedor.append(div);
+}) 
+    contadorCarrito.innerHTML = carrito.length;
+    acumulador = 0;
+    carrito.forEach ( (prod) => {
+      acumulador = acumulador + prod.precio;
+      console.log(prod.precio);
+      console.log(acumulador);
+    })
+    precioTotal.innerText = `$${acumulador}`
+    // precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0)
+}
+
+// Vaciar carrito
 
 const vaciarCarrito = document.getElementById('vaciarCarrito');
 
@@ -102,6 +120,9 @@ vaciarCarrito.addEventListener('click', () => {
   actualizarCarrito();
 })
 
+// Contador carrito
+
+const contadorCarrito = document.getElementById('contadorCarrito');
 
 
 

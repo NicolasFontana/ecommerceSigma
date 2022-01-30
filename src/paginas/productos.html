@@ -97,7 +97,7 @@
 							<a class="nav-link navItems" href="contacto.html">CONTACTO</a>
 						</li>
 					</ul>
-					<button id="modalAbrir" class="botonCarrito"><i class="fas fa-cart-arrow-down carrito"></i></button>
+					<button id="modalAbrir" class="botonCarrito"><i class="fas fa-cart-arrow-down carrito"><span id="contadorCarrito">0</span></i></button>
 					<form class="d-flex">
 						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
 						<button class="btn btn-outline-success" type="submit" hidden>Buscar</button>
@@ -236,9 +236,11 @@
 							<button class = "botonEliminar"><i class="far fa-trash-alt"></i></button> -->
 						</div>
 					</div>
+					<div class="lineaDivisoria"></div>
+					<p class="precioProducto">Precio total:<span id="precioTotal"></span></p>
 					<div class="botonesCarrito">
-						<button type="button" class="btn btn-danger btn-lg mt-5 me-3" id="modalCerrar">Cerrar</button>
-						<button type="button" class="btn btn-danger btn-lg mt-5" id="vaciarCarrito">Vaciar carrito</button>
+						<button type="button" class="btn btn-danger btn-lg mt-1 me-3" id="modalCerrar">Cerrar</button>
+						<button type="button" class="btn btn-danger btn-lg mt-1" id="vaciarCarrito">Vaciar carrito</button>
 					</div>
 				</div>
 			</div>
