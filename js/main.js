@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  console.log("El DOM esta ready")
+})
+
 class Producto {
   constructor (valor) {
     this.nombre = valor.nombre;
@@ -17,7 +21,8 @@ function cargarModelos () {
 
 let paginaModelos = document.getElementById('modelos');
 
-let productosCargados = cargarModelos(productos);
+let productosCargados = cargarModelos();
+
 // Cargar productos a la pag
 
 let carrito = [];
@@ -60,20 +65,24 @@ const eliminarDelCarrito = (prodId) => {
   // console.log(carrito);
 }
 
-// Modal carrito
+// Modal carrito con jQuery
 
-const modalAbrir = document.getElementById('modalAbrir');
-const modalCerrar = document.getElementById('modalCerrar');
+const modalAbrir = $('#modalAbrir');
+// const modalCerrar = document.getElementById('modalCerrar');
 const modalContainer = document.getElementById('modalContainer');
 const carritoContenedor = document.getElementById('carritoContenedor')
 
-modalAbrir.addEventListener('click', () => {
+modalAbrir.on('click', function() {
   modalContainer.classList.toggle('modalActive');
 })
 
-modalCerrar.addEventListener('click', () => {
-  modalContainer.classList.toggle('modalActive');
+$('#modalCerrar').on('click', function () {
+  modalContainer.classList.toggle('modalActive')
 })
+
+// modalCerrar.addEventListener('click', () => {
+//   modalContainer.classList.toggle('modalActive');
+// })
 
 // modalContainer.addEventListener('click', () => {
 //   modalContainer.classList.toggle('modalActive')
