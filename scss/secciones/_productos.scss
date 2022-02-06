@@ -49,3 +49,15 @@
   }
   /* TERMINA PRODUCTOS*/
 
+
+  .botonAgregarAlCarrito {
+    background-color:#FD885ED6; 
+    color:#80192C; 
+    border: none #363434;
+    &:hover {
+      font-size: 10rem;
+      background: #80192C;
+      color: #FD885ED6;
+      transition: all 0.3s;
+    }
+  }

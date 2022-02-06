@@ -7,4 +7,12 @@ const productos = [{id:1, nombre:"Maceta Mica", imagen:"maceta-mica.jpg", precio
                   {id:6, nombre:"Soporte auricular mesada", imagen:"soporte-auriculares-mesada.jpg", precio:900},
                   {id:7, nombre:"Marcador de libro", imagen:"marcador-de-libro.jpg", precio:250},
                   {id:8, nombre:"Soporte regulable", imagen:"soporte-regulable-notebook.jpg", precio:850},
-                  {id:9, nombre:"Soporte auricular pie", imagen:"soporte-auriculares.jpg", precio:950}]
+                  {id:9, nombre:"Soporte auricular pie", imagen:"soporte-auriculares.jpg", precio:950}];
+
+class Producto {
+    constructor (valor) {
+    this.nombre = valor.nombre;
+    this.imagen = valor.imagen;
+    this.precio = valor.precio;
+    } 
+  }

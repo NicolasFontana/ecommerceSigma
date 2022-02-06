@@ -106,26 +106,68 @@
 		<!-- Termina sección de navegación -->
 
 		<section class="contacto">
-			<h2 class="tituloContacto">CONTACTO</h2>
-			<div class="containerFormText">
-				<h3 class="contactanos">Te responderemos tus dudas lo antes posible!<br />Contactarse por Whatsapp para
-					diseños personalizados</h3>
-				<section class="boxFormulario">
-					<form class="form" action="">
+			<div class="d-flex flex-row justify-content-center">
+				<div class="">
+					<h2 class="tituloContacto">CONTACTO</h2>
+				</div>
+			</div>
+			<div class="containerFormText container w-75">
+				<div class="row justify-content-center mb-5">
+					<div class="col-8">
+						<h3 class="contactanos">En caso de necesitar diseños personalizados recomendamos que se contacten por el siguiente formulario o Whatsapp para obtener una 
+							atención única por parte de nuestros diseñadores.<br><br>Te responderemos tus dudas lo antes posible! </h3>
+					</div>
+				</div>
+				<div class="boxFormulario row justify-content-center">
+					<div class="col-4">
+						<form class="row g-2 fs-3 p-3 bg-dark text-white rounded-1">
+							<div class="col-md-6 ps-4 pe-5 mb-4 mt-4">
+								<label for="name" class="form-label">Nombre</label>
+								<input id="formNombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" autocomplete="name">
+							</div>
+							<div class="col-md-6 pe-4 ps-5 mb-4 mt-4">
+								<label for="inputPassword4" class="form-label">Número</label>
+								<input id="formNumero" type="tel" class="form-control" id="input" autocomplete="tel" placeholder="Número">
+							</div>
+							<div class="col-12 ps-4 pe-4 mb-4">
+								<label for="inputAddress" class="form-label">Email</label>
+								<input id="formEmail" type="email" class="form-control" id="inputAddress" placeholder="Email" autocomplete="email">
+							</div>
+							<div class="mb-3 ps-4 pe-4 mb-4">
+								<label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+								<textarea id="formTexto" class="form-control form__input--message" id="exampleFormControlTextarea1" rows="10" placeholder="Mensaje..." resize="none" style="resize: none;"></textarea>
+							</div>
+							<div class="col-12">
+								<div class="form-check ms-4 mb-4">
+									<input id="formCheckbox" class="form-check-input" type="checkbox" id="gridCheck">
+									<label class="form-check-label" for="gridCheck">Quiero recibir ofertas semanales</label>
+								</div>
+							</div>
+							<div class="col-12 ms-4 mb-4">
+								<button id="formEnviar" type="button" class="btn-lg btn-primary fs-5">Enviar</button>
+							</div>
+						</form>
+					</div>
+					<!-- <form class="form" action="">
 						<div class="containerFormulario">
 							<label class="form__tittle">CONTACTANOS</label>
 							<div class="formNombreNumero">
-								<input class="form__input" type="text" placeholder="Nombre y apellido" autocomplete="name" required />
-								<input class="form__input" type="tel" placeholder="Número" autocomplete="tel" required />
+								<input id="formNombre" class="form__input" type="text" placeholder="Nombre y apellido" autocomplete="name"/>
+								<input id="formNumero" class="form__input" type="tel" placeholder="Número" autocomplete="tel"/>
 							</div>
-							<input class="form__input" type="email" placeholder="Email" required autocomplete="email" />
-							<textarea class="form__input form__input--message" name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-							<label class="form__Ofertas"><input class="form__checkbox" type="checkbox" />Quiero recibir
+							<input id="formEmail" class="form__input" type="email" placeholder="Email" autocomplete="email" />
+							<textarea id="formTexto" class="form__input form__input--message" name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+							<label id="formCheckbox" class="form__Ofertas"><input class="form__checkbox" type="checkbox" />Quiero recibir
 								las ofertas semanales</label>
-							<button class="form__send" type="submit">ENVIAR</button>
+							<button id="formEnviar" class="form__send" type="button">ENVIAR</button>
 						</div>
-					</form>
-				</section>
+					</form> -->
+				</div>
+				<div class="row justify-content-center pb-5">
+					<div class="col-4">
+						<div id="resultado" class="">asdasddas</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -164,6 +206,10 @@
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
 		crossorigin="anonymous"></script>
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<!-- Script JS -->
+		<script src="../../js/validacion.js"></script>
 </body>
 
 </html>

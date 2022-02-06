@@ -16,7 +16,7 @@ html {
   text-transform: uppercase;
 }
 
-.contacto .containerFormText .boxFormulario .form, .itemProducto, .containerInstagram nav .publicacionesIg #pubIg3, .containerInstagram nav .publicacionesIg #pubIg2, .containerInstagram nav .publicacionesIg #pubIg1 {
+.itemProducto, .containerInstagram nav .publicacionesIg #pubIg3, .containerInstagram nav .publicacionesIg #pubIg2, .containerInstagram nav .publicacionesIg #pubIg1 {
   box-shadow: 0px 0px 14px 2px rgba(200, 200, 200, 0.69);
   -webkit-box-shadow: 0px 0px 14px 2px rgba(200, 200, 200, 0.69);
   -moz-box-shadow: 0px 0px 14px 2px rgba(200, 200, 200, 0.69);
@@ -437,6 +437,18 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
   overflow: hidden;
 }
 /* TERMINA PRODUCTOS*/
+.botonAgregarAlCarrito {
+  background-color: #FD885ED6;
+  color: #80192C;
+  border: none #363434;
+}
+.botonAgregarAlCarrito:hover {
+  font-size: 10rem;
+  background: #80192C;
+  color: #FD885ED6;
+  transition: all 0.3s;
+}
+
 /* Modal */
 .modalContainer {
   width: 100vw;
@@ -525,6 +537,10 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
   color: #b02a37;
 }
 
+.carritoToast {
+  font-size: 1.4rem;
+}
+
 /* COMIENZA PREGUNTA FRECUENTES */
 .gridContainer {
   font-family: sans-serif;
@@ -584,76 +600,16 @@ footer nav .itemsFooter .containerFooter .containerFooterRedes .subItemsDos .ico
 /* TERMINA NOSOTROS */
 /* COMIENZA CONTACTO */
 .contacto {
-  display: flex;
-  flex-direction: column;
   background: #F5F5F5;
 }
 .contacto .tituloContacto {
   margin: 3rem auto 2rem auto;
 }
-.contacto .containerFormText {
-  display: flex;
-  justify-content: space-around;
-  margin: 0rem 2rem;
-}
-.contacto .containerFormText .contactanos {
+.contacto .contactanos {
   font-family: "Oswald";
   margin-top: 2rem;
   font-size: 2.5rem;
   font-weight: 300;
-  justify-self: center;
-  align-self: flex-start;
-}
-.contacto .containerFormText .boxFormulario .form {
-  background-color: #363434;
-  width: 90%;
-  max-width: 40rem;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  font-family: sans-serif;
-  margin: 2rem 4rem 4rem 0rem;
-  color: #FD895E;
-}
-.contacto .containerFormText .boxFormulario .form .containerFormulario {
-  display: flex;
-  flex-direction: column;
-}
-.contacto .containerFormText .boxFormulario .form .containerFormulario .formNombreNumero {
-  display: flex;
-  justify-content: space-between;
-}
-.contacto .containerFormText .boxFormulario .form .containerFormulario .form__tittle {
-  font-family: "Oswald";
-  margin: 1rem;
-  font-size: 2rem;
-}
-.contacto .containerFormText .boxFormulario .form .containerFormulario .form__input {
-  padding: 0.3rem;
-  margin: 1rem;
-  outline: none;
-  border: none;
-  border: solid 0.1rem grey;
-  background: #F5F5F5;
-}
-.contacto .containerFormText .boxFormulario .form .containerFormulario .form__input--message {
-  resize: none;
-  font-family: sans-serif;
-}
-.contacto .containerFormText .boxFormulario .form .containerFormulario .form__send {
-  margin: 1rem;
-  background-color: #FD895E;
-  color: #363434;
-  border: none;
-  font-family: sans-serif;
-  font-size: 2rem;
-  cursor: pointer;
-  border-radius: 0.5rem;
-}
-.contacto .containerFormText .boxFormulario .form .containerFormulario .form__Ofertas {
-  font-size: 1.2rem;
-}
-.contacto .containerFormText .boxFormulario .form .containerFormulario .form__Ofertas .form__checkbox {
-  margin: 1rem 0.5rem 1rem 1rem;
 }
 
 /* TERMINA CONTACTO */
