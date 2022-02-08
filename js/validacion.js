@@ -73,18 +73,18 @@ formEnviar.addEventListener('click', () => {
 
 // Eventos focusout
 
-// formNombre.addEventListener('blur', () => {
-//   validar();
-// })
+formNombre.addEventListener('blur', () => {
+  validar();
+})
 
-// formNumero.addEventListener('blur', () => {
-//   validar();
-// })
+formNumero.addEventListener('blur', () => {
+  validar();
+})
 
-// formEmail.addEventListener('blur', () => {
-//   validar();
-// })
+formEmail.addEventListener('blur', () => {
+  validar();
+})
 
-// formTexto.addEventListener('blur', () => {
-//   validar();
-// })
+formTexto.addEventListener('blur', () => {
+  validar();
+})

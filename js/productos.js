@@ -50,13 +50,13 @@ let productoX = document.createElement('div');
       className: "carritoToast",
       offset: {
         x: 0, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-        y: 120, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+        y: 0, // vertical axis - can be a number or a string indicating unity. eg: '2em'
       },
       duration: 3000,
       destination: "./carrito.html",
       newWindow: false,
       close: true,
-      gravity: "top", // `top` or `bottom`
+      gravity: "bottom", // `top` or `bottom`
       position: "right", // `left`, `center` or `right`
       stopOnFocus: true, // Prevents dismissing of toast on hover
       style: {
