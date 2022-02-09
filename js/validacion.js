@@ -17,7 +17,6 @@ function validar () {
     formNombre.classList.add("is-invalid");
     resultado.innerHTML = `<p class="d-flex justify-content-center mt-3 p-3 bg-danger text-white fs-3">Complete los campos solicitados porfavor</p>`;
     $("#resultado").slideDown("slow");
-    // El return false permite salir de la función y que resultado.innerHTML = "" no pise a los anteriores resultado.innerHTML
     return false;
   } else if (formNombre.value.length >= 3) {
     formNombre.classList.remove("is-invalid");
@@ -62,13 +61,36 @@ function validar () {
     formTexto.classList.remove("is-invalid");
     formTexto.classList.add("is-valid");
     $("#resultado").slideUp("slow");
+    return true;
   }
 }
+
+
+
+
 
 // Evento enviar
 
 formEnviar.addEventListener('click', () => {
   validar();
+  if (validar() == true) {
+    const APIURL = 'https://jsonplaceholder.typicode.com/posts';
+    const infoUsuario = {nombre: formNombre.value, numero: formNumero.value, email: formEmail.value, mensaje: formTexto.value};
+    function datosPost () {
+      $.ajax({
+        method: "POST",
+        url: APIURL,
+        data: infoUsuario,
+        success: function (respuesta) {
+          console.log("post funco")
+          resultado.innerHTML = `<p class="d-flex justify-content-center mt-3 p-3 bg-success text-white fs-3">Los datos se enviaron correctamente ${respuesta.nombre}. Muchas gracias!</p>`;
+          $("#resultado").slideDown("slow");
+        }
+      });
+    }
+    datosPost();
+    console.log(validar())
+  }
 })
 
 // Eventos focusout

@@ -25,6 +25,33 @@ function cargarModelos () {
 
 let productosCargados = cargarModelos();
 
+// Guardar productos en carrito localStorage
+
+window.onload = init;
+let productosCargadosCarrito = [];
+
+function init() {
+  if(localStorage.getItem("carrito")) {
+    for (let i = 0; i=3; i++) {
+        productosCargadosCarrito.push(JSON.parse(localStorage.getItem("carrito")[i]));
+        console.log("init");
+        console.log(JSON.parse(localStorage.getItem("carrito")));
+        console.log(productosCargadosCarrito);
+        console.log(localStorage.getItem(localStorage.carrito(i)));
+    }
+  }
+}
+
+function guardarProductosCarrito (carrito) {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+function cargarModelosCarrito () {
+  return JSON.parse(localStorage.getItem("carrito"));
+}
+
+
+
 // Cargar productos a la pag
 
 let carrito = [];
@@ -75,9 +102,9 @@ const agregarAlCarrito = (prodId) => {
 
 const eliminarDelCarrito = (prodId) => {
   const item = carrito.find ( (prod) => prod.id === prodId);
-  const indice = carrito.indexOf(item)
-
-  carrito.splice(indice, 1)
+  const indice = carrito.indexOf(item);
+  console.log(indice);
+  carrito.splice(indice, 1);
   actualizarCarrito();
 }
 
@@ -118,11 +145,16 @@ const actualizarCarrito = () => {
     acumulador = 0;
     carrito.forEach ( (prod) => {
       acumulador = acumulador + prod.precio;
-      console.log(prod.precio);
-      console.log(acumulador);
     })
     precioTotal.innerText = `$${acumulador}`
     // precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0)
+    console.log("150")
+    console.log(productosCargadosCarrito);
+    guardarProductosCarrito(carrito);
+    console.log("152");
+    productosCargadosCarrito = cargarModelosCarrito();
+    console.log("154")
+    console.log(productosCargadosCarrito);
 }
 
 // Vaciar carrito
@@ -153,3 +185,8 @@ paginaNavegador.innerHTML = `<nav aria-label="Page navigation example">
 </nav>`
 
 paginaModelos.appendChild(paginaNavegador);
+
+
+
+
+
