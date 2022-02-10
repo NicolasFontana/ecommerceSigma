@@ -65,10 +65,6 @@ function validar () {
   }
 }
 
-
-
-
-
 // Evento enviar
 
 formEnviar.addEventListener('click', () => {
@@ -83,7 +79,7 @@ formEnviar.addEventListener('click', () => {
         data: infoUsuario,
         success: function (respuesta) {
           console.log("post funco")
-          resultado.innerHTML = `<p class="d-flex justify-content-center mt-3 p-3 bg-success text-white fs-3">Los datos se enviaron correctamente ${respuesta.nombre}. Muchas gracias!</p>`;
+          resultado.innerHTML = `<p class="d-flex justify-content-center mt-3 p-3 bg-success text-white fs-3">Los datos se enviaron correctamente ${respuesta.nombre}! Te responderemos lo antes posible.</p>`;
           $("#resultado").slideDown("slow");
         }
       });
@@ -91,7 +87,7 @@ formEnviar.addEventListener('click', () => {
     datosPost();
     console.log(validar())
   }
-})
+});
 
 // Eventos focusout
 
