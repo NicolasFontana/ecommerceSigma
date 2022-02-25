@@ -105,3 +105,31 @@
   .carritoToast {
     font-size: 1.4rem;
   }
+
+  .botonEliminar {
+    font-size: 2rem;
+    border: transparent;
+    background-color: transparent;
+    color: #dc3545;
+
+  :hover {
+    color: #b02a37;
+  }}
+
+  .nombreProductoCarrito {
+    font-size: 2rem;
+    margin: 0;
+  } 
+
+  .precioProductoCarrito {
+    font-size: 2rem;
+    margin: 0;
+    margin-right: 1rem;
+  }
+
+  #lineaDivisoriaCarrito{
+    height: 0.1rem;
+    width: 20%;
+    background: #D3D3D39F;
+    margin: 5rem auto;
+  }

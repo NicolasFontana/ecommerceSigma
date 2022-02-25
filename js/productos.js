@@ -27,34 +27,25 @@ let productosCargados = cargarModelos();
 
 // Guardar productos en carrito localStorage
 
-// window.onload = init;
-// let productosCargadosCarrito = [];
+function addLocalStorage () {
+  localStorage.setItem('carrito', JSON.stringify(carrito));
+}
 
-// function init() {
-//   if(localStorage.getItem("carrito")) {
-//     for (let i = 0; i=3; i++) {
-//         productosCargadosCarrito.push(JSON.parse(localStorage.getItem("carrito")[i]));
-//         console.log("init");
-//         console.log(JSON.parse(localStorage.getItem("carrito")));
-//         console.log(productosCargadosCarrito);
-//         console.log(localStorage.getItem(localStorage.carrito(i)));
-//     }
-//   }
-// }
-
-// function guardarProductosCarrito (carrito) {
-//     localStorage.setItem("carrito", JSON.stringify(carrito));
-// }
-
-// function cargarModelosCarrito () {
-//   return JSON.parse(localStorage.getItem("carrito"));
-// }
-
-
+window.onload = function readLocalStorage() {
+  const storage = JSON.parse(localStorage.getItem('carrito'))
+  console.log("estoy aca")
+  if (storage != "" && storage != null) {
+    carrito = storage;
+    console.log("entre")
+    console.log(carrito)
+    actualizarCarrito();
+  }
+}
 
 // Cargar productos a la pag
 
 let carrito = [];
+console.log(carrito)
 
 productosCargados.forEach( (producto) =>  {
 let productoX = document.createElement('div');
@@ -96,6 +87,16 @@ let productoX = document.createElement('div');
 
 const agregarAlCarrito = (prodId) => {
   const itemProductos = productosCargados.find ( (prod) => prod.id === prodId)
+
+  for (let i = 0 ; i < carrito.length; i++) {
+    if ( carrito[i].id === prodId) {
+      carrito[i].cantidad ++;
+      console.table(carrito);
+      actualizarCarrito ();
+      return null
+    }
+  }
+
   carrito.push(itemProductos);
   actualizarCarrito ();
 }
@@ -133,28 +134,27 @@ const actualizarCarrito = () => {
     const div = document.createElement('div');
     div.className = 'productoEnCarrito';
     div.innerHTML = `
-                  <p class="nombreProductoCarrito">${prod.nombre}</p>
+                  <p class="nombreProductoCarrito">x${prod.cantidad} ${prod.nombre}</p>
                   <div class="precioTachito">
-                    <p class="precioProductoCarrito">$${prod.precio}</p>
+                    <p class="precioProductoCarrito">$${prod.precio}/u.</p>
                     <button onclick="eliminarDelCarrito(${prod.id})" class = "botonEliminar"><i class="far fa-trash-alt"></i></button>
                   </div>
     `
     carritoContenedor.append(div);
 }) 
-    contadorCarrito.innerHTML = carrito.length;
+    let acumuladorCarrito = carrito.length;
+    carrito.forEach( (prod) => {
+      if (prod.cantidad > 1) {
+        acumuladorCarrito = acumuladorCarrito + prod.cantidad - 1
+      }
+    } )
+    contadorCarrito.innerHTML = acumuladorCarrito;
     acumulador = 0;
     carrito.forEach ( (prod) => {
-      acumulador = acumulador + prod.precio;
+      acumulador = acumulador + prod.precio * prod.cantidad;
     })
     precioTotal.innerText = `$${acumulador}`
-    // precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0)
-    // console.log("150")
-    // console.log(productosCargadosCarrito);
-    // guardarProductosCarrito(carrito);
-    // console.log("152");
-    // productosCargadosCarrito = cargarModelosCarrito();
-    // console.log("154")
-    // console.log(productosCargadosCarrito);
+    addLocalStorage();
 }
 
 // Vaciar carrito
