@@ -78,14 +78,12 @@ formEnviar.addEventListener('click', () => {
         url: APIURL,
         data: infoUsuario,
         success: function (respuesta) {
-          console.log("post funco")
           resultado.innerHTML = `<p class="d-flex justify-content-center mt-3 p-3 bg-success text-white fs-3">Los datos se enviaron correctamente ${respuesta.nombre}! Te responderemos lo antes posible.</p>`;
           $("#resultado").slideDown("slow");
         }
       });
     }
     datosPost();
-    console.log(validar())
   }
 });
 

@@ -54,7 +54,7 @@
 
 	<!-- Termina sección de header -->
 
-	<main>
+	<main id="mainCarrito">
 		<!-- Comienza sección de navegación -->
 			<nav class="navbar navbar-expand-lg bg-nav">
 				<div class="container-fluid containerNav">
@@ -72,15 +72,14 @@
 									PRODUCTOS
 								</a>
 								<ul class="dropdown-menu bgSubItems mt-0 animate__animated animate__fadeIn" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de notebook</a></li>
-									<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de auriculares</a></li>
-									<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de celular</a></li>
-									<li><a class="dropdown-item navSubItems" href="productos.html">Macetas</a></li>
-									<li><a class="dropdown-item navSubItems" href="productos.html">Toppers</a></li>
-									<li><a class="dropdown-item navSubItems" href="productos.html">Juguetes</a></li>
-									<li><a class="dropdown-item navSubItems" href="productos.html">Lectura</a></li>
-									<li><a class="dropdown-item navSubItems" href="productos.html">Llaveros</a></li>
-									<li><a class="dropdown-item navSubItems" href="productos.html">Cuadros</a></li>
+									<li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Soportes de notebook</a></li>
+									<li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Soportes de auriculares</a></li>
+									<li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Soportes de celular</a></li>
+									<li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Toppers personalizados</a></li>
+									<li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Macetas</a></li>
+									<li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Lapiceros</a></li>
+									<li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Juguetes</a></li>
+									<li><a class="dropdown-item navSubItems" href="./src/paginas/productos.html">Lectura</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -93,7 +92,7 @@
 								<a class="nav-link navItems" href="contacto.html">CONTACTO</a>
 							</li>
 						</ul>
-						<button id="modalAbrir" class="botonCarrito"><i class="fas fa-cart-arrow-down carrito"></i></button>
+						<button id="modalAbrir" class="botonCarrito"><i class="fas fa-cart-arrow-down carrito"><span id="contadorCarrito">0</span></i></button>
 						<form class="d-flex">
 							<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
 							<button class="btn btn-outline-success" type="submit" hidden>Buscar</button>
@@ -104,11 +103,56 @@
 
 		<!-- Termina sección de navegación -->
 
-		<h2 class="productosTexto d-flex justify-content-center p-5">Carrito</h2>
-		<div class="container" id="containerCarritoFinalizarCompra">
-		</div>
-		<div id="lineaDivisoriaCarrito"></div>
+			<!-- Modal -->
 
+			<div id="modalContainer" class="modalContainer">
+				<div id="modal">
+					<h2>Carrito</h2>
+					<div id="carritoContenedor">
+						<div class="productoEnCarrito">
+						</div>
+					</div>
+					<div class="lineaDivisoria"></div>
+					<p class="precioProducto">Precio total:<span id="precioTotal"></span></p>
+					<div class="botonesCarrito">
+						<a class="btn btn-success btn-lg mt-1 me-3" href="./carrito.html" role="button" id="finalizarCompra">Finalizar compra</a>
+						<button type="button" class="btn btn-danger btn-lg mt-1 me-3" id="modalCerrar">Cerrar</button>
+						<button type="button" class="btn btn-danger btn-lg mt-1" id="vaciarCarrito">Vaciar carrito</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Termina modal-->
+
+		<h2 class="productosTexto d-flex justify-content-center p-5">Carrito</h2>
+		<div class="container" id="containerCarritoFinalizarCompra"></div>
+		<div class="container" id="cardFormasDePago">
+			<div id="cardFormasDePago2" class="d-flex justify-content-between align-items-center cardFormasDePago">
+				<div class="">
+					<p class="formasDePago"><input id="opt1" class="me-3" type="radio" name="metodoPago">Deposito o Transferencia Bancaria</p>
+					<p class="formasDePago"><input id="opt2" class="me-3" type="radio" name="metodoPago">Mercadopago - Tarjetas Online, PagoFacil, RapiPago</p>
+					<p class="formasDePago"><input id="opt3" class="me-3" type="radio" name="metodoPago">Tarjetas Visa o MasterCard</p>
+				</div>
+				<div class="">
+					<p id="precioProducto" class="">Precio total: <span id="precioTotal"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="cardMetodoEnvio" class="cardMetodoEnvio">
+				<p class="titulo">Método de retiro/envío</p>
+				<div class="metodoDeEnvio">
+					<p class="opcionEnvio"><input id="opc1" class="me-3" type="radio" name="metodoEnvio">Retiro por sucursal</p>
+					<p class="opcionEnvio"><input id="opc2" class="me-3" type="radio" name="metodoEnvio">Envio a domicilio</p>
+					<p class="opcionEnvio"><input id="opc3" class="me-3" type="radio" name="metodoEnvio">Envio a sucursal más cercana</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container"><div class="d-flex justify-content-end align-items-center pb-3"><button id="btnComprar" class="botonComprarCarrito">Comprar</button></div></div>
+		<div id="msjDeCompra" class="container" style="display: none;">
+			
+		</div>
 	</main>
 	<footer>
 		<nav>
@@ -150,8 +194,8 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<!-- JavaScript -->
 		<script src="../../js/stock.js"></script>
-		<!-- <script src="../../js/productos.js"></script> -->
 		<script src="../../js/carrito.js"></script>
+		<!-- <script src="../../js/productos.js"></script> -->
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
 		crossorigin="anonymous"></script>

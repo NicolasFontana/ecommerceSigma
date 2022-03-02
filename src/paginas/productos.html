@@ -81,12 +81,11 @@
 								<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de notebook</a></li>
 								<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de auriculares</a></li>
 								<li><a class="dropdown-item navSubItems" href="productos.html">Soportes de celular</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Toppers personalizados</a></li>
 								<li><a class="dropdown-item navSubItems" href="productos.html">Macetas</a></li>
-								<li><a class="dropdown-item navSubItems" href="productos.html">Toppers</a></li>
+								<li><a class="dropdown-item navSubItems" href="productos.html">Lapiceros</a></li>
 								<li><a class="dropdown-item navSubItems" href="productos.html">Juguetes</a></li>
 								<li><a class="dropdown-item navSubItems" href="productos.html">Lectura</a></li>
-								<li><a class="dropdown-item navSubItems" href="productos.html">Llaveros</a></li>
-								<li><a class="dropdown-item navSubItems" href="productos.html">Cuadros</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -109,32 +108,31 @@
 		</nav>
 		<!-- Termina sección de navegación -->
 		<!-- Comienza sección de productos -->
-		<div class="container containerProductos">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col d-flex justify-content-center my-5">
 					<h2 class="productosTexto">PRODUCTOS</h2>
 				</div>
 			</div>
-			<div class="row d-flex justify-content-center">
-				<div class="col col-xxl col-xl-3 col-lg-4 col-md-5 d-flex align-items-start p-xxl-1 me-md-5 mb-5">
+			<div class="row justify-content-end">
+				<div class="d-flex col align-items-start">
 					<ul class="colNav">
-						<li><a href="">Soportes de notebook</a></li>
-						<li><a href=""> Soportes de auriculares</a></li>
-						<li><a href="">Soportes de celular</a></li>
-						<li><a href="">Macetas</a></li>
-						<li><a href="">Toppers</a></li>
-						<li><a href="">Juguetes</a></li>
-						<li><a href="">Lectura</a></li>
-						<li><a href="">Llaveros</a></li>
-						<li><a href="">Cuadros</a></li>
+						<li><button id="soportesNotebook">Soportes de notebook</button></li>
+						<li><button id="soportesAuriculares">Soportes de auriculares</button></li>
+						<li><button id="soportesCelular">Soportes de celular</button></li>
+						<li><button id="toppers">Toppers personalizados</button></li>
+						<li><button id="macetas">Macetas</button></li>
+						<li><button id="lapiceros">Lapiceros</button></li>
+						<li><button id="juguetes">Juguetes</button></li>
+						<li><button id="libro">Lectura</button></li>
 					</ul>
 				</div>
-				<div class="col-xxl-9 col-xl-7 col-lg col-md ms-xl-5 d-flex justify-content-sm-center">
-					<div id="modelos" class="row">
+				<div class="d-flex col-8">
+					<div id="modelos" class="d-flex flex-wrap justify-content-start">
 					</div>
 				</div>
 			</div>
-			
+		</div>
 	<!-- Modal -->
 
 			<div id="modalContainer" class="modalContainer">
@@ -142,9 +140,6 @@
 					<h2>Carrito</h2>
 					<div id="carritoContenedor">
 						<div class="productoEnCarrito">
-							<!-- <p class="nombreProductoCarrito">Nombre del producto</p>
-							<p class="precioProductoCarrito">Precio XX</p>
-							<button class = "botonEliminar"><i class="far fa-trash-alt"></i></button> -->
 						</div>
 					</div>
 					<div class="lineaDivisoria"></div>
@@ -158,8 +153,7 @@
 			</div>
 
 	<!-- Termina modal-->
-
-		</div>
+	
 	</main>
 	<!-- Termina sección de productos -->
 	<footer>
@@ -210,7 +204,6 @@
 	<!-- JavaScript -->
 	<script src="../../js/stock.js"></script>
 	<script src="../../js/productos.js"></script>
-	<script src="../../js/main.js"></script>
 </body>
 
 </html>
